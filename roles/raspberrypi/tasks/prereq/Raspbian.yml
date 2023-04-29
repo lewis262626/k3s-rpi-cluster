@@ -23,3 +23,11 @@
     path: /usr/sbin/ip6tables-legacy
     name: ip6tables
   register: ip6_legacy
+
+- name: Update and Install Longhorn dependencies
+  ansible.builtin.apt:
+    update_cache: yes
+    pkg:
+    - nfs-common
+    - open-iscsi
+    - util-linux
