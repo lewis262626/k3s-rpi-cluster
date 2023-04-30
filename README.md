@@ -86,3 +86,7 @@ spec:
   ipAddressPools:
     - first-pool
 ```
+
+## Trafeik Ingress Controllee
+
+Trafeik 2.x is the ingress controller used ok this cluster.
